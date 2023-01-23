@@ -1,0 +1,15 @@
+.img-logo {
+    width: 50px;
+}
+
+.brand-name{
+    font-family: 'Amatic SC', cursive;
+}
+
+#menuPrincipal{
+    background-color: #FF6363 !important;
+}
+
+body{
+    background-color: #202040 !important;
+}
