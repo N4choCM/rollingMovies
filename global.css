@@ -13,3 +13,67 @@
 body{
     background-color: #202040 !important;
 }
+
+.footer {
+  background-color: #FFBD69;
+  padding: 10px 0px;
+}
+
+.footer .row {
+  min-height: 100px;
+  text-align: center;
+}
+
+.footer-items {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-items:hover {
+  color: rgb(169, 166, 166);
+}
+
+#facebook{
+  color: black;
+}
+
+#facebook:hover{
+  color: #4267B2;
+}
+
+#instagram{
+  color: black;
+}
+
+#instagram:hover{
+  color: #405DE6;
+}
+
+#twitter{
+  color: black;
+}
+
+#twitter:hover{
+  color: #1DA1F2;
+}
+
+#logo-footer{
+  margin-left: auto;
+  margin-right: auto;
+  width: 25vw;
+  height: 20vw;
+}
+
+#logo-footer-md{
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vw;
+  height: 15vw;
+}
+
+#logo-footer-lg{
+  margin-left: auto;
+  margin-right: auto;
+  width: 10vw;
+  height: 8vw;
+}
