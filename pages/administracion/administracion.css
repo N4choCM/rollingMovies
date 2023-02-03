@@ -28,3 +28,7 @@ textarea{
 #btn-orange:hover{
     background-color: rgb(227, 147, 0);
 }
+
+.pic-small{
+    width: 75px;
+}

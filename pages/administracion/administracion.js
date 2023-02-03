@@ -22,12 +22,12 @@ const printTable = () => {
             <td>${movie.title}</td>
             <td>${movie.description}</td>
             <td>${movie.category}</td>
-            <td>${movie.published}</td>
+            <td><img class="pic-small" src="${movie.pic}" alt="${movie.title}"></td>
             <td>
                 <div class="d-flex gap-2 text-center justify-content-center">
                     <i id="orange" class="bi bi-pencil-fill pointer" onclick="openModalUpdate(${movie.id})"></i>
                     <i class="bi bi-x-circle-fill pointer text-danger" onclick="deleteMovie(${i})"></i>
-					<i class="bi bi-star-fill pointer"onclick=""></i>
+					<i class="${movie.published} ? bi bi-star-fill pointer text-warning : bi bi-star-fill pointer" onclick="isPublished(${i})"></i>
                 </div>
             </td>
         </tr>
@@ -47,10 +47,10 @@ const createMovie = (event) => {
 	let title = document.querySelector("#title").value;
 	let description = document.querySelector("#description").value;
 	let category = document.querySelector("#category").value;
-	let published = document.querySelector("#published").value;
+	// let published = false;
 	let pic = document.querySelector("#pic").value;
 
-	let movie = new Movie(id, title, description, category, published, pic);
+	let movie = new Movie(id, title, description, category, pic);
 
 	db.push(movie);
 
@@ -60,7 +60,7 @@ const createMovie = (event) => {
 	document.querySelector("#title").value = "";
 	document.querySelector("#description").value = "";
 	document.querySelector("#category").value = "";
-	document.querySelector("#published").value = "";
+	// document.querySelector("#published").value = "";
 	document.querySelector("#pic").value = "";
 
 	printTable();
@@ -97,7 +97,7 @@ const openModalUpdate = (id) => {
 	document.querySelector("#modalDescription").value =
 		db[indexUpdate].description;
 	document.querySelector("#modalCategory").value = db[indexUpdate].category;
-	document.querySelector("#modalPublished").value = db[indexUpdate].published;
+	// document.querySelector("#modalPublished").value = db[indexUpdate].published;
 	document.querySelector("#modalPic").value = db[indexUpdate].pic;
 
 	modalUpdate.show();
@@ -110,7 +110,7 @@ const updateMovie = (event) => {
 	db[indexUpdate].description =
 		document.querySelector("#modalDescription").value;
 	db[indexUpdate].category = document.querySelector("#modalCategory").value;
-	db[indexUpdate].published = document.querySelector("#modalPublished").value;
+	// db[indexUpdate].published = document.querySelector("#modalPublished").value;
 	db[indexUpdate].pic = document.querySelector("#modalPic").value;
 
 	localStorage.setItem("movies", JSON.stringify(db));
