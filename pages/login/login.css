@@ -1,0 +1,16 @@
+.main-color {
+	background-color: #543864;
+}
+
+.header-main {
+	height: 35vh;
+	position: relative;
+	width: 100%;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.img-main {
+	object-fit: cover;
+	position: relative;
+}
