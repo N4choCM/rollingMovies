@@ -1,0 +1,10 @@
+.Rollinmovis-resaltado {
+	color: #ff6363;
+}
+.ancla-contacto {
+	color: white;
+	text-decoration: none;
+}
+.ancla-contacto:hover {
+	color: #ff6363;
+}
