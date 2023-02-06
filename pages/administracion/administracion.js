@@ -22,12 +22,20 @@ const printTable = () => {
             <td>${movie.title}</td>
             <td>${movie.description}</td>
             <td>${movie.category}</td>
-            <td><img class="pic-small" src="${movie.pic}" alt="${movie.title}"></td>
+            <td><img class="pic-small" src="${movie.pic}" alt="${
+			movie.title
+		}"></td>
             <td>
                 <div class="d-flex gap-2 text-center justify-content-center">
-                    <i id="orange" class="bi bi-pencil-fill pointer" onclick="openModalUpdate(${movie.id})"></i>
+                    <i id="orange" class="bi bi-pencil-fill pointer" onclick="openModalUpdate(${
+						movie.id
+					})"></i>
                     <i class="bi bi-x-circle-fill pointer text-danger" onclick="deleteMovie(${i})"></i>
-					<i class="${movie.published} ? bi bi-star-fill pointer text-warning : bi bi-star-fill pointer" onclick="isPublished(${i})"></i>
+					<i class="${
+						movie.published === "true"
+							? "bi bi-star-fill pointer text-warning"
+							: "bi bi-star-fill pointer"
+					}" onclick="isPublished(${i})"></i>
                 </div>
             </td>
         </tr>
@@ -43,14 +51,23 @@ const printTable = () => {
 const createMovie = (event) => {
 	event.preventDefault();
 
-	let id = new Date().getMilliseconds();
+	let id = Math.floor(Math.random() * 1000000);
 	let title = document.querySelector("#title").value;
 	let description = document.querySelector("#description").value;
 	let category = document.querySelector("#category").value;
-	// let published = false;
+	let published = "false";
 	let pic = document.querySelector("#pic").value;
+	let trailer = document.querySelector("#trailer").value;
 
-	let movie = new Movie(id, title, description, category, pic);
+	let movie = new Movie(
+		id,
+		title,
+		description,
+		category,
+		published,
+		pic,
+		trailer
+	);
 
 	db.push(movie);
 
@@ -62,6 +79,7 @@ const createMovie = (event) => {
 	document.querySelector("#category").value = "";
 	// document.querySelector("#published").value = "";
 	document.querySelector("#pic").value = "";
+	document.querySelector("#trailer").value = "";
 
 	printTable();
 
@@ -99,6 +117,7 @@ const openModalUpdate = (id) => {
 	document.querySelector("#modalCategory").value = db[indexUpdate].category;
 	// document.querySelector("#modalPublished").value = db[indexUpdate].published;
 	document.querySelector("#modalPic").value = db[indexUpdate].pic;
+	document.querySelector("#modalTrailer").value = db[indexUpdate].trailer;
 
 	modalUpdate.show();
 };
@@ -112,11 +131,22 @@ const updateMovie = (event) => {
 	db[indexUpdate].category = document.querySelector("#modalCategory").value;
 	// db[indexUpdate].published = document.querySelector("#modalPublished").value;
 	db[indexUpdate].pic = document.querySelector("#modalPic").value;
+	db[indexUpdate].trailer = document.querySelector("#modalTrailer").value;
 
 	localStorage.setItem("movies", JSON.stringify(db));
 
 	printTable();
 	modalUpdate.hide();
+};
+
+const isPublished = (i) => {
+	db.forEach((movie) => {
+		movie.published = "false";
+	});
+	db[i].published = "true";
+	localStorage.setItem("movies", JSON.stringify(db));
+
+	printTable();
 };
 
 printTable();
