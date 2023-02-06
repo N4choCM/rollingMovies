@@ -62,25 +62,36 @@
       </div>
     </nav>
   </header>
-  <main>
-    <form method='POST'>
-      <div class="form-group">
-        <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" name='nombre' id="nombre" placeholder="nombre...">
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" name='email' id="email" placeholder="email...">
-      </div>
-      <div class="form-group">
-        <label for="exampleTextarea">Mensaje</label>
-        <textarea class="form-control" name='mensaje' id="mensaje" rows="3"></textarea>
-      </div>
-      <div class="form-group">
-        <input type="checkbox" required> Acepto la política de privacidad.
-      </div>
-      <button class="btn btn-primary" type="submit">Enviar</button>
-    </form>
+  <main class="container">
+    <section>
+      <h1 class="display-1 text-center" id="tituloContact"> Contactanos</h1>
+      <hr>
+      <article class="row d-flex align-items-center">
+        <aside class=" text-center col-12 col-md-6">
+          <h1 class="" id="subTitulo">¿Tuviste algun problema con nuestra página?</h1>
+          <p>¡Tu sugerencia nos ayuda mucho a crecer como comunidad!</p>
+        </aside>
+        <aside class="col-12 col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
+              <input type="text" id="nombre" class="form-control" placeholder="Ej: Juan..." minlength="5" maxlength="22"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="Email" class="form-label">Correo</label>
+              <input type="email" id="Email" class="form-control" placeholder="Ej: juan@gmail.com..." required>
+            </div>
+            <div class="mb-3">
+              <label for="consulta" class="form-label">Mensaje</label>
+              <textarea type="text" id="mensaje" cols="30" rows="4" class="form-control"
+                placeholder="Escriba un mensaje..." minlength="10" maxlength="100" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="enviarMail()">Enviar</button>
+          </form>
+        </aside>
+      </article>
+    </section>
   </main>
   <footer class="footer mt-5">
     <div class=".container">
