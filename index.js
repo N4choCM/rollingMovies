@@ -196,7 +196,7 @@ const getBanner = () => {
 		let column = document.createElement("div");
 
 		let bannerCard = `
-		<a class="pointer" href="/pages/detalles/detalles.html"><div id="carousel" class="carousel slide">
+		<a class="pointer" href="/pages/error/error.html"><div id="carousel" class="carousel slide">
   			<div class="carousel-inner">
   				<div class="carousel-item active">
   					<img id="img-banner" src="${item.pic}" alt="${item.title}">
@@ -207,7 +207,7 @@ const getBanner = () => {
 				<div class="row h-100 align-items-center">
 				  <div class="col-12 col-md-8 col-lg-6 text-md-start text-center">
 					<h1 class="d-none d-md-block">${item.title}</h1>
-					<h3 class="d-none d-md-block">${item.description}</h3>
+					<h5 class="d-none d-md-block">${item.description}</h5>
 				  </div>
 				</div>
 			  </div>
@@ -234,7 +234,7 @@ const getActionMovies = () => {
 		let column = document.createElement("div");
 		let actionCarousel = `
 		<div class="carousel-item active">
-		<a href="/pages/detalles/detalles.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
+		<a href="/pages/error/error.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
 	  </div>
 		`;
 
@@ -257,7 +257,7 @@ const getComedyMovies = () => {
 		let column = document.createElement("div");
 		let comedyCarousel = `
 		<div class="carousel-item active">
-		<a href="/pages/detalles/detalles.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
+		<a href="/pages/error/error.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
 	  </div>
 		`;
 
@@ -280,7 +280,7 @@ const getAdventureMovies = () => {
 		let column = document.createElement("div");
 		let adventureCarousel = `
 		<div class="carousel-item active">
-		<a href="/pages/detalles/detalles.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
+		<a href="/pages/error/error.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
 	  </div>
 		`;
 
@@ -303,7 +303,7 @@ const getTerrorMovies = () => {
 		let column = document.createElement("div");
 		let terrorCarousel = `
 		<div class="carousel-item active">
-		<a href="/pages/detalles/detalles.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
+		<a href="/pages/error/error.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
 	  </div>
 		`;
 
@@ -326,7 +326,7 @@ const getRomanticMovies = () => {
 		let column = document.createElement("div");
 		let romanticCarousel = `
 		<div class="carousel-item active">
-		<a href="/pages/detalles/detalles.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
+		<a href="/pages/error/error.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
 	  </div>
 		`;
 
@@ -349,7 +349,7 @@ const getKidsMovies = () => {
 		let column = document.createElement("div");
 		let kidsCarousel = `
 		<div class="carousel-item active">
-		<a href="/pages/detalles/detalles.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
+		<a href="/pages/error/error.html"><img class="img-carousel" src="${item.pic}" class="d-block w-100" alt="${item.title}"></a>
 	  </div>
 		`;
 
