@@ -51,7 +51,7 @@ const printTable = () => {
 const createMovie = (event) => {
 	event.preventDefault();
 
-	let id = Math.floor(Math.random() * 1000000);
+	let id = db.at(-1).id + 1;
 	let title = document.querySelector("#title").value;
 	let description = document.querySelector("#description").value;
 	let category = document.querySelector("#category").value;

@@ -56,7 +56,7 @@ body {
 .img-carousel {
 	object-fit: cover;
 	width: 100vw;
-	height: 15vw;
+	height: 20vw;
 }
 
 #main .carousel-item img {

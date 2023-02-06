@@ -1,6 +1,6 @@
 /*para pantallas pequeñas*/
 body {
-	background: url(/pages/error/img/406.jpg);
+	background: url(/assets/406.jpg);
 	background-position: center;
 	object-fit: cover;
 	background-size: cover;
@@ -13,7 +13,7 @@ body {
 }
 @media (min-width: 480px) {
 	body {
-		background: url(/pages/error/img/405.jpg);
+		background: url(/assets/405.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		object-fit: cover;
@@ -27,7 +27,7 @@ body {
 /*para pantallas grandes*/
 @media (min-width: 760px) {
 	body {
-		background: url(/pages/error/img/404.jpg);
+		background: url(/assets/404.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		object-fit: cover;
