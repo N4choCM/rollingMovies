@@ -1,15 +1,89 @@
 .img-logo {
-    width: 50px;
+	width: 50px;
 }
 
-.brand-name{
-    font-family: 'Amatic SC', cursive;
+.brand-name {
+	font-family: "Amatic SC", cursive;
 }
 
-#menuPrincipal{
-    background-color: #FF6363 !important;
+#menuPrincipal {
+	background-color: #ff6363 !important;
 }
 
-body{
-    background-color: #202040 !important;
+body {
+	background-color: #202040 !important;
+	max-width: 100vw !important;
+}
+
+.footer {
+	background-color: #ffbd69;
+	padding: 10px 0px;
+	max-width: 100vw !important;
+}
+
+.footer .row {
+	min-height: 100px;
+	text-align: center;
+}
+
+.footer-items {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-items:hover {
+	color: rgb(169, 166, 166);
+}
+
+#facebook {
+	color: black;
+}
+
+#facebook:hover {
+	color: #4267b2;
+}
+
+#instagram {
+	color: black;
+}
+
+#instagram:hover {
+	color: #405de6;
+}
+
+#twitter {
+	color: black;
+}
+
+#twitter:hover {
+	color: #1da1f2;
+}
+
+#logo-footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 28vw;
+	height: 20vw;
+}
+
+#logo-footer-md {
+	margin-left: auto;
+	margin-right: auto;
+	width: 19vw;
+	height: 15vw;
+}
+
+#logo-footer-lg {
+	margin-left: auto;
+	margin-right: auto;
+	width: 10vw;
+	height: 8vw;
+}
+
+.social-icon {
+	color: #202040;
+}
+
+.row-width {
+	max-width: 100vw !important;
 }
