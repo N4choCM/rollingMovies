@@ -1,172 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de inicio de sesión
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de inicio de sesión
      de Rolling Movies, tu sitio de streaming de series o películas.">
-    <meta name="keywords" content="Películas, Series, Streaming">
-    <meta name="author" content="Grupo 2" />
-    <link rel="stylesheet" href="/global.css">
-    <link rel="stylesheet" href="/pages/login/login.css">
-    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <title>Login</title>
+  <meta name="keywords" content="Películas, Series, Streaming">
+  <meta name="author" content="Grupo 2" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="/pages/login/login.css">
+  <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <title>Login</title>
 </head>
-<body class="d-flex flex-column justify-content-between min-vh-100"
-data-bs-spy="scroll"
-data-bs-target="#menuPrincipal"
-data-bs-root-margin="0px 0px -40%"
-data-bs-smooth-scroll="true"
-tabindex="0">
-    <header class="sticky-top">
-        <nav id="menuPrincipal" class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <div class="container text-center text-lg-end">
-              <a class="navbar-brand d-flex align-items-center gap-2" href="/index.html">
-                <img class="img-logo" src="/assets/logo.png" alt="Logo">
-                <h1 class="ms-3 brand-name">Rolling Movies</h1>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/index.html">
-                        <i class="bi bi-house"></i> Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/about/about.html"><i class="bi bi-people"></i>
-                      Acerca de</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/contacto/contacto.html"><i class="bi bi-envelope"></i>
-                      Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="/pages/login/login.html"><i class="bi bi-box-arrow-in-right"></i>
-                      Login</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main class="h-100">
-      <div class="header-main d-flex align-items-center justify-content-center">
-        <img
-          src="/assets/10b1bad21f79df5f462c1c09f12db6ff.jpg"
-          alt="wallpaper"
-          class="w-100 h-100 img-main"
-        />
-        <div class="position-absolute text-white text-center">
-          <h1>Login</h1>
+
+<body class="d-flex flex-column justify-content-between min-vh-100" data-bs-spy="scroll" data-bs-target="#menuPrincipal"
+  data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+  <header class="sticky-top">
+
+    <nav id="menuPrincipal" class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container text-center text-lg-end">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="/index.html">
+          <img class="img-logo" src="/assets/logo.png" alt="Logo">
+          <h1 class="ms-3 brand-name">Rolling Movies</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">
+                <i class="bi bi-house"></i> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/about/about.html"><i class="bi bi-people"></i>
+                Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contacto/contacto.html"><i class="bi bi-envelope"></i>
+                Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-pc-display-horizontal"></i>
+                Administración</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/login/login.html"><i class="bi bi-box-arrow-in-right"></i>
+                Login</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <section id="login h-100">
-        <div class="container-fluid main-color h-100">
-          <div class="row">
-            <div class="col-12 col-lg-6 my-3">
-              <h5 class="text-center text-secondary">FORMULARIO</h5>
-              <form>
-                <div class="mb-3 text-white">
-                  <label for="email">Nombre de usuario o Email:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    class="form-control"
-                    required
-                    placeholder="example@gmail.com"
-                  />
-                  <div class="invalid-tooltip">Porfavor, escribe tu email.</div>
+    </nav>
+  </header>
+  <main class="h-100">
+    <div class="header-main d-flex align-items-center justify-content-center">
+      <img src="/assets/10b1bad21f79df5f462c1c09f12db6ff.jpg" alt="wallpaper" class="w-100 h-100 img-main" />
+      <div class="position-absolute text-white text-center">
+        <h1>Login</h1>
+      </div>
+    </div>
+    <section id="login h-100">
+      <div class="container-fluid main-color h-100">
+        <div class="row">
+          <div class="col-12 col-lg-6 my-3">
+            <h5 class="text-center text-secondary">FORMULARIO</h5>
+            <form>
+              <div class="mb-3 text-white">
+                <label for="email">Nombre de usuario o Email:</label>
+                <input type="email" id="email" class="form-control" required placeholder="example@gmail.com" />
+                <div class="invalid-tooltip">Porfavor, escribe tu email.</div>
+              </div>
+              <div class="mb-3 text-white">
+                <label for="email">Contraseña</label>
+                <input type="password" id="Contraseña" class="form-control" required placeholder="*******" />
+                <div class="invalid-tooltip">
+                  La Contraseña no es correcta
                 </div>
-                <div class="mb-3 text-white">
-                  <label for="email">Contraseña</label>
-                  <input
-                    type="password"
-                    id="Contraseña"
-                    class="form-control"
-                    required
-                    placeholder="*******"
-                  />
-                  <div class="invalid-tooltip">
-                    La Contraseña no es correcta
-                  </div>
-                </div>
-                <div class="mb-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label
-                    class="form-check-label text-white bg-ligth"
-                    for="exampleCheck1"
-                    >Recordarme</label
-                  >
-                </div>
-                <button type="submit" class="btn btn-secondary bg-ligth">
-                  Enviar
-                </button>
-              </form>
-              <a></a>
-              <a
-                type="submit"
-                class="nav-link text-white"
-                aria-current="page"
-                href="/pages/password/password.html"
-                >Olvide mi Contraseña</a
-              >
-            </div>
-            <div class="col-12 col-lg-6 p-0">
-              <img
-                class="img-login"
-                src="/assets/light-movie-film-film-projector-wallpaper-preview.jpg"
-                class="position-relative backgroundimg"
-                alt="programacion wallpaper"
-              />
-            </div>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label text-white bg-ligth" for="exampleCheck1">Recordarme</label>
+              </div>
+              <button type="submit" class="btn btn-secondary bg-ligth">
+                Enviar
+              </button>
+            </form>
+            <a></a>
+            <a type="submit" class="nav-link text-white" aria-current="page" href="/pages/password/password.html">Olvide
+              mi Contraseña</a>
+          </div>
+          <div class="col-12 col-lg-6 p-0">
+            <img class="img-login" src="/assets/light-movie-film-film-projector-wallpaper-preview.jpg"
+              class="position-relative backgroundimg" alt="programacion wallpaper" />
           </div>
         </div>
-      </section>
-    </main>    <footer class="footer mt-5">
-      <div class=".container">
-        <div class="row align-items-center row-width">
-          <div class="col-12 col-md mt-2 mt-md-0">
-            <a class="footer-items" href="/pages/error/error.html">Política de privacidad</a>
-          </div>
-          <div class="col-12 col-md">
-            <a class="footer-items" href="/pages/error/error.html">Política de cookies</a>
-          </div>
-          <div class="col-12 col-md mb-3 mb-md-0">
-            <a class="footer-items" href="/pages/error/error.html">Aviso legal</a>
-          </div>
-          <div class="col-12 col-md">
-            <a id="facebook" href="/pages/error/error.html" target="_blank"><i class="bi bi-facebook me-2 social-icon pointer" style="font-size: 40px"></i></a>
-            <a id="instagram" href="/pages/error/error.html" target="_blank"><i class="bi bi-instagram me-2 social-icon pointer" style="font-size: 40px"></i></a>
-            <a id="twitter" href="/pages/error/error.html" target="_blank"><i class="bi bi-twitter social-icon pointer" style="font-size: 40px"></i></a>
-          </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer mt-5">
+    <div class=".container">
+      <div class="row align-items-center row-width">
+        <div class="col-12 col-md mt-2 mt-md-0">
+          <a class="footer-items" href="/pages/error/error.html">Política de privacidad</a>
         </div>
-        <hr>
-        <div class="row d-md-none row-width">
-          <img id="logo-footer" src="/assets/logo.png" alt="">
+        <div class="col-12 col-md">
+          <a class="footer-items" href="/pages/error/error.html">Política de cookies</a>
         </div>
-        <div class="row d-none d-md-block d-lg-none row-width">
-          <img id="logo-footer-md" src="/assets/logo.png" alt="">
+        <div class="col-12 col-md mb-3 mb-md-0">
+          <a class="footer-items" href="/pages/error/error.html">Aviso legal</a>
         </div>
-        <div class="row d-none d-lg-block row-width">
-          <img id="logo-footer-lg" src="/assets/logo.png" alt="">
+        <div class="col-12 col-md">
+          <a id="facebook" href="/pages/error/error.html" target="_blank"><i
+              class="bi bi-facebook me-2 social-icon pointer" style="font-size: 40px"></i></a>
+          <a id="instagram" href="/pages/error/error.html" target="_blank"><i
+              class="bi bi-instagram me-2 social-icon pointer" style="font-size: 40px"></i></a>
+          <a id="twitter" href="/pages/error/error.html" target="_blank"><i class="bi bi-twitter social-icon pointer"
+              style="font-size: 40px"></i></a>
         </div>
-        <div class="row text-white row-width">
-          <p>©️ Rolling Movies</p>
-        </div>
-    </footer>
+      </div>
+      <hr>
+      <div class="row d-md-none row-width">
+        <img id="logo-footer" src="/assets/logo.png" alt="">
+      </div>
+      <div class="row d-none d-md-block d-lg-none row-width">
+        <img id="logo-footer-md" src="/assets/logo.png" alt="">
+      </div>
+      <div class="row d-none d-lg-block row-width">
+        <img id="logo-footer-lg" src="/assets/logo.png" alt="">
+      </div>
+      <div class="row text-white row-width">
+        <p>©️ Rolling Movies</p>
+      </div>
+  </footer>
 </body>
 <script src="/pages/login/login.js"></script>
 <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+
 </html>
